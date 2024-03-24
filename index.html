@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div style="position: relative;">
+        <div id="GameName">Snake Water gun <br>By Param Dhama</div>
+    </div>
+    <div id="game">
+        <div id="winloss"></div>
+        <div id="score">
+            <h1>Score: 100</h1>
+        </div>
+        <div id="playground">
+            <div class="play" id="Player">
+                <div class="img" id="playerimg"></div>
+                <p class="name" id="playerid">Snake</p>
+            </div>
+            <div class="play" id="CPU">
+                <div class="img" id="cpuimg"></div>
+                <p class="name" id="cpuid">Snake</p>
+            </div>
+        </div>
+        <div id="choice">
+            <button class="btn" id="choice1" onclick="num(1)"><p>SNAKE</p></button>
+            <button class="btn" id="choice2" onclick="num(2)"><p>WATER</p></button>
+            <button class="btn" id="choice3" onclick="num(3)"><p>GUN</p></button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
