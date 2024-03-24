@@ -28,7 +28,7 @@ html,body{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -10%);
-    font-size: 3rem;
+    font-size: 3vw;
     color: rgb(255, 255, 255);
 }
 
@@ -49,7 +49,7 @@ html,body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%,0);
-    font-size: 3rem;
+    font-size: 3vw;
     color: #ffffff;
 }
 
@@ -63,7 +63,7 @@ html,body{
 
 }
 #score>h1{
-    font-size: 2rem;
+    font-size: 2vw;
     color: rgb(255, 234, 234);
     text-shadow: 1px 0px 2px #43e6ff;
     
@@ -106,7 +106,7 @@ html,body{
 .name{
     position: absolute;
     width: 20%;
-    height: 10%;
+    height: auto;
     top: 90%;
     /* padding-top: 1%; */
     border-radius: 10px;
@@ -177,7 +177,7 @@ button>p{
 }
 p{
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 @keyframes bgcolor {
@@ -195,5 +195,39 @@ p{
     }
     100%{
         background-color: rgb(255, 116, 116);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .img {
+      width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    p{
+        font-size: 5vw;
+    }
+    h1{
+        font-size: 10vw;
+    }
+    #score{
+        font-size: 1000vw;
+    }
+    #GameName{
+        font-size: 7vw;
+    }
+    .name{
+        width: 30vw;
+    }
+    #winloss{
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        -ms-transform: translate(-50%,-50%,0);
+        transform: translate(-50%,-50%,0);
+        font-size: 7vw;
+        color: #ffffff;
+    }
+    #score>h1{
+        padding-top: 10vh;
+        font-size: 7vw;
     }
 }
